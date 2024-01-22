@@ -1,6 +1,7 @@
 .gallery-row-parent {
   height: 100vh;
   padding: 3rem;
+  /* border: 4px solid orange; */
 }
 
 .gallery-item-description {
@@ -9,14 +10,27 @@
 }
 
 .gallery {
+  padding: 3rem;
+  overflow: hidden;
+  width: 100%;
+  /* border: 3px solid red; */
+}
+
+.gallery-content {
   display: flex;
   gap: 2rem;
-  padding: 3rem 0;
-  animation-fill-mode: forwards;
+  width: 100%;
 }
 
 .animate-gallery {
-  animation: slidegallery 15s linear alternate;
+  animation-fill-mode: forwards;
+  animation: slidegallery 18s linear infinite;
+}
+
+@keyframes slidegallery {
+  100% {
+    transform: translateX(-162%);
+  }
 }
 
 .gallery-play-btn {
@@ -29,10 +43,4 @@
   transition: 0.5s ease;
   color: white;
   border: 2px solid white;
-}
-
-@keyframes slidegallery {
-  100% {
-    transform: translateX(-190%);
-  }
 }

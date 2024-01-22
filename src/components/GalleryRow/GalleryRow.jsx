@@ -19,13 +19,15 @@ const GalleryRow = ({galleryItem}) => {
             }
             setIsRunning(isRunning=>isRunning = !isRunning)
         }}>{isRunning ? "Pause" : "Play"}</button>
-        <ul ref={carouselRef} className="gallery animate-gallery">
+        <ul className="gallery">
+            <div ref={carouselRef} className="gallery-content animate-gallery">
             {galleryItem.samples.map(item=>(
                 <GalleryItem key={item.id} item={item}/>
             ))}
-             {isRunning && galleryItem.samples.map(item=>(
+             {galleryItem.samples.map(item=>(
                 <GalleryItem key={item.id} item={item}/>
             ))}
+            </div>
         </ul>
     </div>
   )

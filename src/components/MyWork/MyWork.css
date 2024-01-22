@@ -2,11 +2,17 @@
   height: 100vh;
   overflow: auto;
   flex: 2;
-  border: 2px solid black;
+  /* border: 5px solid green; */
+  /* padding: 4rem; */
 }
 
 .my-work-header {
-  padding: 6.5rem;
+  padding: 6.5rem 3rem;
+}
+
+.my-work-gallery-parent-container {
+  width: 100%;
+  /* border: 3px solid red; */
 }
 
 /* @media screen and (max-width: 950px) {
