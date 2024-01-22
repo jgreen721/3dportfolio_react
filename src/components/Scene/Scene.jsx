@@ -10,7 +10,7 @@ const Scene = () => {
         <Canvas>
           <color attach="background" args={["black"]}/>
           <ambientLight intensity={.8}/>
-          <Environment preset="city" background={true}/>
+          <Environment preset="city" background={false}/>
             <Experience/>
         </Canvas>
     </div>

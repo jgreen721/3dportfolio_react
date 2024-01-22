@@ -1,7 +1,7 @@
 .app {
   max-width: 144rem;
   margin: 0 auto;
-  border: 2px solid rgb(165, 117, 117);
+  /* border: 2px solid rgb(165, 117, 117); */
   min-height: 100vh;
 }
 

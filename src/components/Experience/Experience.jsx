@@ -1,4 +1,4 @@
-import React, {useEffect,useRef} from 'react'
+import React, {useEffect,useRef, useState} from 'react'
 import {useFrame} from "@react-three/fiber"
 import {useGLTF, Float,Box,useAnimations} from "@react-three/drei"
 
@@ -9,9 +9,11 @@ const Model = ()=>{
     const modelRef = useRef();
     const pos = [0,-2.5,-1];
     const {actions,mixer} = useAnimations(img.animations,img.scene)
-
+    const [showIntro,setShowIntro] = useState(true)
 
     console.log(img)
+
+
 
 
     useEffect(()=>{
@@ -19,17 +21,34 @@ const Model = ()=>{
         //
         console.log('mobile size...')
       }
+
+      setTimeout(()=>{
+        console.log('stop intro!')
+
+        setShowIntro(showIntro=>showIntro = false)
+        mixer.stopAllAction();
+      },5500);
+      
     },[])
 
   console.log(img.animations)
 
     useFrame(()=>{
       img.animations.forEach(animation=>{
-        if(animation.name == "Typing"){
+        if(showIntro){
+        if(animation.name != "Typing"){
          let action = mixer.clipAction(animation)
          action.play();
         //  console.log("typing...")
         }
+      }
+      else{
+        if(animation.name == "Typing"){
+          let action = mixer.clipAction(animation)
+          action.play();
+         //  console.log("typing...")
+         }
+      }
       })
     })
 

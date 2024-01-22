@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 950px) {
   .about-me-parent {
-    border: 3px solid green;
+    /* border: 3px solid green; */
     padding: 2rem;
     height: 600px;
   }
