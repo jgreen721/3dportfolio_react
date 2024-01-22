@@ -1,0 +1,17 @@
+.my-work-column {
+  height: 100vh;
+  overflow: auto;
+  flex: 2;
+  border: 2px solid black;
+}
+
+.my-work-header {
+  padding: 6.5rem;
+}
+
+/* @media screen and (max-width: 950px) {
+  .my-work-column {
+    flex: 1;
+    border: 5px solid green;
+  }
+} */

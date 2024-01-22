@@ -1,0 +1,38 @@
+.gallery-row-parent {
+  height: 100vh;
+  padding: 3rem;
+}
+
+.gallery-item-description {
+  max-width: 400px;
+  /* border: 2px solid red; */
+}
+
+.gallery {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem 0;
+  animation-fill-mode: forwards;
+}
+
+.animate-gallery {
+  animation: slidegallery 15s linear alternate;
+}
+
+.gallery-play-btn {
+  margin: 2rem;
+  padding: 0.5rem 2.5rem;
+  border: 2px solid black;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.5s ease;
+  color: white;
+  border: 2px solid white;
+}
+
+@keyframes slidegallery {
+  100% {
+    transform: translateX(-190%);
+  }
+}

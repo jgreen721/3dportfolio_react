@@ -1,0 +1,18 @@
+.gallery-img-container {
+  height: 300px;
+  width: 300px;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.gallery-img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+  .gallery-img-container {
+    height: 200px;
+    width: 200px;
+  }
+}

@@ -1,0 +1,37 @@
+.about-me-parent {
+  padding: 8rem 2rem;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  position: relative;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.l-spacing {
+  letter-spacing: 0.4rem;
+}
+
+.canvas-overlay {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+  .about-me-parent {
+    border: 3px solid green;
+    padding: 2rem;
+    height: 600px;
+  }
+}
