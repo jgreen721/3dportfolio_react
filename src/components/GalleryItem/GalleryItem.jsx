@@ -8,8 +8,10 @@ const GalleryItem = ({item}) => {
         <div className="gallery-img-container">
             <img className="gallery-img" src={item.img} alt="" />
         </div>
+        <div className="gallery-item-content">
         <h4>{item.title}</h4>
         <a href={item.site} target="_blank">Visit</a>
+        </div>
     </li>
   )
 }

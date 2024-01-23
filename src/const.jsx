@@ -5,7 +5,10 @@ export const perfumeAd = "./samples/newbie/perfume_ad.png"
 export const resultsCard = "./samples/newbie/results_card.png"
 
 //beginner 
-// export const taskManager = "./samples/senior/taskmanager.png"
+export const makerPrelaunch = "./samples/beginner/makerprelaunch.png"
+export const multistepForm = "./samples/beginner/multistep.png"
+export const notifications = "./samples/beginner/notifications.png"
+export const pwordGenerator = "./samples/beginner/passwordgenerator.png"
 
 
 
@@ -20,3 +23,4 @@ export const quiz = "./samples/junior/quiz.png"
 //expert
 export const taskManager = "./samples/senior/taskmanager.png"
 export const movieSite = "./samples/senior/moviesite.png"
+export const speakerSite = "./samples/senior/speakersite.png"

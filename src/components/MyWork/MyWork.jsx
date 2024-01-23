@@ -1,5 +1,5 @@
 import React from 'react'
-import { faqCard,nftCard,perfumeAd,resultsCard,rpsSite,bodyMass,clockSite,portfolio,quiz,taskManager,movieSite } from '../../const'
+import { faqCard,nftCard,perfumeAd,resultsCard,makerPrelaunch, multistepForm,notifications,pwordGenerator,rpsSite,bodyMass,clockSite,portfolio,quiz,taskManager,movieSite,speakerSite } from '../../const'
 import {GalleryRow} from ".."
 import "./MyWork.css"
 
@@ -16,6 +16,10 @@ https://clockapp-react.vercel.app/
 https://fe-quiz.vercel.app/
 https://fe-challenge-rockpaperscissors.vercel.app/
 https://fe-entertainmentwebapp.vercel.app/
+https://jgreen721.github.io/frontend_challenges/maker-prelaunch/
+https://do-multistepform-dcdfuwwgc-jgreen721.vercel.app/
+https://jgreen721.github.io/frontend_challenges/passwd_gen/
+https://jgreen721.github.io/frontend_challenges/notificationsapp/
 */
 
 const MyWork = () => {
@@ -36,10 +40,10 @@ const MyWork = () => {
       level:"Beginner",
       description:"Building out small sites and applying responsive positioning to page elements.",
       samples:[
-        {id:1,title:"FAQ-Card",img:faqCard,site:"https://frontend3dsolution.vercel.app/"},
-        {id:2,title:"NFT-Card",img:nftCard,site:"https://jgreen721.github.io/frontend_challenges/nftfigma/"},
-        {id:3,title:"Perfume Ad",img:perfumeAd,site:"https://perfume3d.vercel.app/"},
-        {id:4,title:"Survey Card",img:resultsCard,site:"https://jgreen721.github.io/frontend_challenges/results_summary/"},
+        {id:1,title:"Maker Prelaunch",img:makerPrelaunch,site:"https://jgreen721.github.io/frontend_challenges/maker-prelaunch/"},
+        {id:2,title:"MultistepForm",img:multistepForm,site:"https://do-multistepform-dcdfuwwgc-jgreen721.vercel.app/"},
+        {id:3,title:"Notifications Snippet",img:notifications,site:"https://jgreen721.github.io/frontend_challenges/notificationsapp/"},
+        {id:4,title:"Password Generator",img:pwordGenerator,site:"https://jgreen721.github.io/frontend_challenges/passwd_gen/"},
       ]
     },
     {
@@ -60,7 +64,7 @@ const MyWork = () => {
       samples:[
         {id:1,title:"Movie Site",img:movieSite,site:"https://fe-entertainmentwebapp.vercel.app/"},
         {id:2,title:"Task Manager",img:taskManager,site:"https://react-feedbackmanager.vercel.app/"},
-        {id:3,title:"Perfume Ad",img:perfumeAd,site:"https://perfume3d.vercel.app/"},
+        {id:3,title:"SpeakerSite",img:perfumeAd,site:"https://perfume3d.vercel.app/"},
         {id:4,title:"Survey Card",img:resultsCard,site:"https://jgreen721.github.io/frontend_challenges/results_summary/"},
       ]
     },

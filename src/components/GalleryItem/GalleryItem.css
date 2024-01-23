@@ -1,3 +1,7 @@
+.gallery-item {
+  text-align: center;
+}
+
 .gallery-img-container {
   height: 300px;
   width: 300px;
@@ -8,6 +12,10 @@
 .gallery-img {
   height: 100%;
   width: 100%;
+}
+
+.gallery-item-content {
+  margin: 1.5rem 0;
 }
 
 @media screen and (max-width: 950px) {

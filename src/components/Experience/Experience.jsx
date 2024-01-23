@@ -5,7 +5,7 @@ import {useGLTF, Float,Box,useAnimations} from "@react-three/drei"
 
 
 const Model = ()=>{
-    const img = useGLTF("./models/typingguy.glb")
+    const img = useGLTF("./models/newscene.glb")
     const modelRef = useRef();
     const pos = [0,-2.5,-1];
     const {actions,mixer} = useAnimations(img.animations,img.scene)
@@ -55,8 +55,8 @@ const Model = ()=>{
 
     return (
       <group>
-        <directionalLight position={[0,0,1]} intensity={2}/>
-        <pointLight intensity={3} position={[0,1,-1]} />
+        {/* <directionalLight position={[0,0,1]} intensity={2}/>
+        <pointLight intensity={3} position={[0,1,-1]} /> */}
         <Float>
         <primitive scale={.6} position={[0,-2.5,-1]} rotation={[0,Math.PI * -.1,0]} object={img.scene}/>
         </Float>

@@ -1,10 +1,18 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef,useEffect} from 'react'
 import "./GalleryRow.css"
 import {GalleryItem} from "../"
 
 const GalleryRow = ({galleryItem}) => {
-    const [isRunning,setIsRunning] = useState(true);
+    const [isRunning,setIsRunning] = useState(false);
     const carouselRef = useRef();
+
+
+    useEffect(()=>{
+        if(carouselRef.current){
+        carouselRef.current.style.animationPlayState = "paused";
+        }
+
+    },[])
   return (
     <div className="gallery-row-parent">
         <h3>Level:{galleryItem.level}</h3>
@@ -16,7 +24,7 @@ const GalleryRow = ({galleryItem}) => {
             else{
                 carouselRef.current.style.animationPlayState = "running";
 
-            }
+             }
             setIsRunning(isRunning=>isRunning = !isRunning)
         }}>{isRunning ? "Pause" : "Play"}</button>
         <ul className="gallery">
