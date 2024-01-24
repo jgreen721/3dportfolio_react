@@ -32,6 +32,7 @@
   .about-me-parent {
     /* border: 3px solid green; */
     padding: 2rem;
-    height: 600px;
+    height: 40%;
+    min-height: 325px;
   }
 }
