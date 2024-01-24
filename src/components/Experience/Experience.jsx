@@ -5,7 +5,7 @@ import {useGLTF, Float,Box,useAnimations} from "@react-three/drei"
 
 
 const Model = ()=>{
-    const img = useGLTF("./models/newscene.glb")
+    const img = useGLTF("./models/typingguy2.glb")
     const modelRef = useRef();
     const pos = [0,-2.5,-1];
     const {actions,mixer} = useAnimations(img.animations,img.scene)
@@ -35,21 +35,21 @@ const Model = ()=>{
 
     useFrame(()=>{
       img.animations.forEach(animation=>{
-        if(showIntro){
-        if(animation.name != "Typing"){
-         let action = mixer.clipAction(animation)
-         action.play();
-        //  console.log("typing...")
-        }
-      }
-      else{
+      //   if(showIntro){
+      //   if(animation.name != "Typing"){
+      //    let action = mixer.clipAction(animation)
+      //    action.play();
+      //   //  console.log("typing...")
+      //   }
+      // }
+      // else{
         if(animation.name == "Typing"){
           let action = mixer.clipAction(animation)
           action.play();
          //  console.log("typing...")
          }
-      }
-      })
+      // }
+       })
     })
 
 
